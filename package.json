@@ -1,0 +1,9 @@
+{
+  "name": "reason-talk",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "bs-platform": "^1.7.3"
+  }
+}
