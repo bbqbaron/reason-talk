@@ -11,8 +11,10 @@ You may have seen a million versions of this slide in the world, but here are so
 * If you can't mutate references, then...
   * You have to use return values
     * So now you can refactor with no hassle
+---
   * You can't cause an in-memory race condition
     * You can parallelize your code more easily 
+---
   * The inability to hand-maintain mutable state
     * makes your iteration a lot less tangled
     * makes you realize how often the same pattern is used over and over as if it's new each time

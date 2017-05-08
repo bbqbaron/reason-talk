@@ -33,7 +33,7 @@ let b = true ? 1 : 2;
 ---
 ### Functions
 ```ocaml
-let add a b = a + b;
+let add a b => a + b;
 let doSideEffects () => print_string "hi!";
 ```
 ---

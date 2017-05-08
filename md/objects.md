@@ -13,7 +13,11 @@ type player = {
   name: string,
   snack: snack
 };
+```
 
+---
+
+```ocaml
 let p = {
   pub name = "foo";
   pub snack = Cheetos; 
@@ -43,7 +47,11 @@ type named 'a = {
   ..
   name: string
 } as 'a;
+```
 
+---
+
+```ocaml
 let p:(named player) = {
   pub name = "foo";
   pub snack = Cheetos; 
