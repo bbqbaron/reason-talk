@@ -11,11 +11,15 @@ const getFoo = ({ foo }) => foo;
 
 ---
 
+"JS is turning into loosely-typed Ocaml" --Someone from Reason, I think [@jordwalke](https://twitter.com/jordwalke)
+
+---
+
 Reason and its cousins provide something like the C-style `switch` construct, but more powerful. It's basically a big if-equals-else block, but:
 
 ---
 
-* it can perform variable binding in your cases
+* can perform variable binding in your cases
 * is checked for exhaustiveness so you don't miss one
 * doesn't fall through if you forget `break`!
 * is an _expression_ so it seamlessly returns things
@@ -23,7 +27,7 @@ Reason and its cousins provide something like the C-style `switch` construct, bu
 ---
 
 ```ocaml
-let firstInList list => /* aka head */
+let firstInList list => /* aka `head` */
   switch list {
   | [] => Nothing
   | [x] => Some x
@@ -40,6 +44,7 @@ let sidesOfDie die => switch die {
 | D8 => 8
 | D10 => 10
 | D12 => 12
+| D20 => 20
 };
 ```
 

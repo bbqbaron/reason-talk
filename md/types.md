@@ -18,7 +18,7 @@ There is now a type `Game` in your system with only one possible value: the arbi
 ---
 
 ## Variant Types
-That is, types that can be one of two completely different types. Each case is given a "constructor" or "tag" that identifies it.
+That is, types that can be one of two completely different types. Each case is given a tag that identifies it.
 
 ---
 
@@ -26,7 +26,11 @@ That is, types that can be one of two completely different types. Each case is g
 type Die = D4|D6|D8|D10|D12|D20
 ```
 
-This is a lot like the more OO "enum", without the underlying artifacts like having an associated int value, etc.
+This is a lot like the more OO "enum", without the underlying artifacts like having an associated int value...and with a really cool benefit.
+
+(Next slide, please!)
+
+---
 
 ## Tag Arguments 
 
@@ -44,7 +48,8 @@ So now you can say `let a = Some int;` and it is a valid value of type `maybe`. 
 
 ## Type Arguments
 
-You can reuse type definitions!
+You can reuse type definitions by defining a type as a function of another type.
+Think of generics in .NET/Java.
 
 ---
 
@@ -60,6 +65,8 @@ This is how you might simulate `null`.
 type result 'a = Ok 'a | Err string;
 type either 'a 'b = Left 'a | Right 'a;
 ```
+
+---
 
 I miss type systems like this every second of writing code that doesn't have them! I can't recommend strongly enough that you try them out.
 

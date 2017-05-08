@@ -59,3 +59,7 @@ module EntityCard = fun (Thing: Entity) => {
   };
 };
 ```
+
+---
+
+They're like constrained generics, basically.
