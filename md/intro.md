@@ -2,6 +2,8 @@
 
 A flexible functional static programming language with browser and native-code backends. As correct as possible without being alienating.
 
+---
+
 ||Reason|Scala|PureScript|Elm|Kotlin|JavaScript|Clojure|TypeScript|
 |---|---|---|---|---|---|---|---|---|
 |Multi-target|x|x|||x||x||

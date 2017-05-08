@@ -142,8 +142,36 @@ type named 'a = {
   name: string
 } as 'a;
 
+type roll = Roll int die;
+
+module Rules = {
+  let checkDie = Roll 2 D6;
+};
+
+type size = Sm | Med | Lg;
+module type Entity = {
+  type t;
+  let getSize: t => size;
+};
+
+module Character: Entity = {
+  type t = {
+    size: size
+  };
+  let getSize { size } => size; 
+};
+
+module EntityCard = fun (Thing: Entity) => {
+  type t = Thing.t;
+  let showSize t => switch (Thing.getSize t) {
+  | Sm => "Small"
+  | Med => "Medium"
+  | Lg => "Large"
+  };
+};
+
 let p:(named player) = {
   pub name = "foo";
-  pub snack = Cheetos; 
-  /* haha "pub snack" */
+  pub snack = Cheetos
 };
+

@@ -1,33 +1,16 @@
----
 
 ---?include=md/intro.md
 
----
+---?include=md/yayfp.md
 
 ---?include=md/shouldi.md
 
----
-
 ---?include=md/thingsyoualwaysdoincode.md
----
 
 ---?include=md/records.md
----
 
 ---?include=md/types.md
----
 ---?include=md/matching.md
----
 ---?include=md/objects.md
----
----
----
----
----
----
----
----
----
----
-
-
+---?include=md/modules.md
+---?include=md/tooling.md
